@@ -1,2 +1,3 @@
 # kazikb.github.io
-Personal blog
+
+My personal blog hosted with GitHub Pages using Jekyll.
