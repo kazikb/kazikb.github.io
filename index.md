@@ -20,7 +20,7 @@ title: Home
   <!-- SIDEBAR -->
   <div class="sidebar">
     <h2>Tags</h2>
-    <ul>
+    <ul id="posts">
       <li>
         <a href="#" onclick="setTag('all'); return false;">All</a>
       </li>
