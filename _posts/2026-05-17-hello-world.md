@@ -12,4 +12,4 @@ Throughout my career, I’ve always tried to include cybersecurity and automatio
 
 This blog will mostly be a collection of structured notes, but hopefully others might find some of these write-ups useful as well. Writing things down in a more organized and polished way should also help me better understand and revisit topics in the future.
 
-To be clear from the start: I’m not a professional writer. Since we now have LLMs widely available, I plan to use them to review my posts and improve clarity, grammar, and style before publishing. Still, these tools are only there to assist. The ideas and first drafts will always be my own.
+To be clear from the start: I'm not a professional writer, and English isn't my native language. Since we now have LLMs widely available, I plan to use them to review my posts and improve their clarity, grammar, and style before publishing. These tools are there to assist, not to create the content for me. The ideas, opinions, and first drafts will always be my own.

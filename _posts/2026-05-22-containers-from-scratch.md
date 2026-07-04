@@ -596,7 +596,7 @@ ip link set con2-ns up
 ip route add default via 172.17.10.1
 ```
 
-# Testing isolation and connectivity
+## Testing isolation and connectivity
 
 With both containers up and running, we can now validate that the environment behaves as expected. The goal here is not only to confirm connectivity, but also to observe how isolation mechanisms (network, filesystem, and process model) behave in practice.
 
@@ -618,7 +618,7 @@ Finally, we can stress the container by running CPU-intensive workloads to see h
 
 <img class="screenshot" src="{{ "/assets/images/2026-05-22-containers-from-scratch/05-testing-load.png" | relative_url }}" alt="load">
 
-# Cleanup
+## Cleanup
 
 After all tests are complete, we should clean up all created resources.
 
@@ -658,7 +658,7 @@ sudo iptables -D FORWARD -i enp0s3 -o minidocker-br -m state --state RELATED,EST
 sudo ip link delete minidocker-br
 ```
 
-# Conclusion
+## Conclusion
 
 As a final step, I prepared a set of scripts that automate everything described in this post. They are available in the accompanying [GitHub repository](https://github.com/kazikb/containers-from-scratch). After manually assembling these building blocks, it becomes much easier to understand what tools like Docker or Podman actually do under the hood.
 
@@ -666,7 +666,13 @@ While the abstractions provided by these tools are extremely valuable, they do n
 
 The talks and write-ups referenced earlier are excellent starting points, but hands-on experimentation provides a level of intuition that is difficult to gain otherwise.
 
-# Sources
+## Follow-up
+
+**Update, July 2026:** I wrote a follow-up article that checks the missing security layers in this shell-based container: user namespaces, capabilities, seccomp, and AppArmor.
+
+Read it here: [Why My Container From Scratch Is Not a Secure Runtime](/linux/containers/2026/07/04/why-my-container-from-scratch-is-not-a-secure-runtime.html)
+
+## Sources
 
 - [https://www.youtube.com/watch?v=4RUiVAlJE2w](https://www.youtube.com/watch?v=4RUiVAlJE2w)
 - [https://michalpitr.substack.com/p/linux-container-from-scratch](https://michalpitr.substack.com/p/linux-container-from-scratch)
